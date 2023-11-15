@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>User Selection</title>
+</head>
+<body>
+    <img src="church_logo.png" alt="CITAM Church Logo">
+    <h1>CITAM CHURCH SCHOOL REGISTRATION</h1>
+    <div id="user-selection">
+        <p id="user-message">Choose the user:</p>
+        <div id="user-buttons">
+            <button class="user-button" onclick="selectUser('Pastor')">Pastor</button>
+            <button class="user-button" onclick="selectUser('Teacher')">Teacher</button>
+            <button class="user-button" onclick="selectUser('Parent')">Parent</button>
+        </div>
+    </div>
+
+    <script>
+        function selectUser(userType) {
+            switch (userType) {
+                case 'pastor':
+                    window.location.href = 'pastor.html'; 
+                    break;
+                case 'teacher':
+                    window.location.href = 'teacher.html'; 
+                    break;
+                case 'parent':
+                    window.location.href = 'parent.html'; 
+                    break;
+                default:
+                    alert(You have selected: ${userType});
+                    break;
+            }
+        }
+    </script>
+</body>
+</html>

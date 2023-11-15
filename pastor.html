@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Pastor Page</title>
+</head>
+<body>
+    <img src="church_logo.png" alt="CITAM Church Logo">
+    <h1>Welcome, Pastor</h1>
+    <div id="pastor-buttons">
+        <button class="user-button" onclick="showLogin()">Login</button>
+        <button class="user-button" onclick="showSignUp()">Sign Up</button>
+        <button1 onclick="goToMainPage()"></button>
+            <script>
+                function goToMainPage() {
+                    window.location.href = "index.html";
+                }
+            </script>
+    </div>
+
+    <div id="login-form" style="display: none;">
+        <form>
+            <label for="login-username">Username:</label>
+            <input type="text" id="login-username" name="login-username" placeholder="Enter your username" required><br>
+
+            <label for="login-password">Password:</label>
+            <input type="password" id="login-password" name="login-password" placeholder="Enter your password" required><br>
+
+            <button type="submit" class="user-button">Login</button>
+            <button onclick="goToMainPage()">Return to Main Page</button>
+            <script>
+                function goToMainPage() {
+                    window.location.href = "index.html";
+                }
+            </script>
+        </form>
+    </div>
+
+    <div id="signup-form" style="display: none;">
+        <form>
+            <label for="signup-id">ID:</label>
+            <input type="text" id="signup-id" name="signup-id" placeholder="Enter your ID" required><br>
+
+            <label for="signup-name">Name:</label>
+            <input type="text" id="signup-name" name="signup-name" placeholder="Enter your name" required><br>
+
+            <label for="Church">Church:</label>
+            <input type="text" id="signup-church" name="signup-Church" placeholder="Enter your Church location" required><br>
+
+            <label for="signup-password">Create Password:</label>
+            <input type="password" id="signup-password" name="signup-password" placeholder="Create a password" required><br>
+
+            <label for="confirm-password">Retype Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="Retype your password" required><br>
+
+            <button type="submit" class="user-button">Sign Up</button>
+        </form>
+        <button onclick="goToMainPage()">Return to Main Page</button>
+            <script>
+                function goToMainPage() {
+                    window.location.href = "index.html";
+                }
+            </script>
+    </div>
+
+    <script>
+        function showLogin() {
+            document.getElementById("login-form").style.display = "block";
+            document.getElementById("signup-form").style.display = "none";
+        }
+
+        function showSignUp() {
+            document.getElementById("signup-form").style.display = "block";
+            document.getElementById("login-form").style.display = "none";
+        }
+    </script>
+</body>
+</html>

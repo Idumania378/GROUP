@@ -12,9 +12,9 @@
     <div id="user-selection">
         <p id="user-message">Choose the user:</p>
         <div id="user-buttons">
-            <button class="user-button" onclick="selectUser('Pastor')">Pastor</button>
-            <button class="user-button" onclick="selectUser('Teacher')">Teacher</button>
-            <button class="user-button" onclick="selectUser('Parent')">Parent</button>
+            <button class="user-button" onclick="selectUser('pastor')">Pastor</button>
+            <button class="user-button" onclick="selectUser('teacher')">Teacher</button>
+            <button class="user-button" onclick="selectUser('parent')">Parent</button>
         </div>
     </div>
 
@@ -31,7 +31,7 @@
                     window.location.href = 'parent.html'; 
                     break;
                 default:
-                    alert(You have selected: ${userType});
+                    alert(`You have selected: ${userType}`);
                     break;
             }
         }

@@ -12,7 +12,7 @@
     <div id="parent-buttons">
         <button class="user-button" onclick="showLogin()">Login</button>
         <button class="user-button" onclick="showSignUp()">Sign Up</button>
-        <button1 onclick="goToMainPage()"></button>
+        <button1 onclick="MainPage()"></button>
             <script>
                 function goToMainPage() {
                     window.location.href = "index.html";
@@ -29,7 +29,8 @@
             <input type="password" id="login-password" name "login-password" placeholder="Enter your password" required><br>
 
             <button type="submit" class="user-button">Login</button>
-            <button onclick="goToMainPage()">Return to Main Page</button>
+            <button onclick="goToMainPage()" style="background-color: #3498db;">Main Page</button>
+
             <script>
                 function goToMainPage() {
                     window.location.href = "index.html";

@@ -1,0 +1,210 @@
+body {
+    background: linear-gradient(to right, #ffffff, #f0f0f0);
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+#intro-section {
+    position: relative;
+    text-align: center;
+}
+
+#intro-section img {
+    width: 100%;
+}
+
+.intro-text {
+    background: rgba(237, 220, 220, 0.4);
+    padding: 20px;
+    border-radius: 13px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    left: 10%;
+    text-align: center;
+}
+
+.intro-text h1,
+.intro-text p {
+    margin-top: 0;
+}
+
+#features-section {
+    background-color: #f0f0f0;
+    padding: 30px;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.feature img {
+    max-width: 40%;
+    border-radius: 10px;
+}
+
+.feature-text {
+    max-width: 100%; /* Change to 100% to cover the whole image */
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-logo p {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.footer-contacts a img {
+    max-width: 30px;
+    margin-right: 10px;
+}
+
+.footer-copyright {
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    #features-section {
+        padding: 20px;
+    }
+
+    .feature {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .feature img {
+        max-width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .feature-text {
+        max-width: 100%;
+    }
+}
+
+#services-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service {
+    flex-basis: 48%;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.service img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.service-text {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    max-width: 100%;
+}
+#services-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center; /* Center-align text within the section */
+    margin-bottom: 30px; /* Add margin at the bottom */
+}
+
+.services-section h3 {
+    margin-top: 0; /* Remove top margin */
+    visibility: visible; /* Make the text visible */
+    margin-bottom: 30px;
+    display: block; /* Make the text display as block */
+    width: 100%; /* Set width to 100% for full-width text */
+}
+
+.service {
+    position: relative;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.service img {
+    top: 20px;
+    max-width: 68%;
+}
+
+.service-text {
+    position: absolute;
+    bottom: 10px;
+    left: 15%;
+    background: rgba(199, 169, 169, 0.8);
+    padding: 20px;
+    max-width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-text h3 {
+    margin-top: 0;
+}
+
+@media (max-width: 768px) {
+    .service {
+        flex-basis: 100%;
+        margin-right: 0;
+    }
+
+    .service-text {
+        margin-top: 20px;
+        position: static; /* Remove absolute positioning on smaller screens */
+        max-width: 100%; /* Full width on smaller screens */
+        box-shadow: none; /* Remove box shadow on smaller screens */
+    }
+}

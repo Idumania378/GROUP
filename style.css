@@ -1,0 +1,130 @@
+body {
+    background: linear-gradient(to right, #ffffff, #f0f0f0);
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#introduction-section,
+#admissions-process {
+    text-align: center;
+}
+
+#introduction-section h1 {
+    color: #f50000;
+}
+
+#introduction-section p {
+    color: #f40808;
+}
+
+#admissions-process form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#admissions-process label {
+    margin-bottom: 5px;
+    color:dimgrey;
+}
+
+#admissions-process input {
+    border: 2px solid #87CEEB; /* Sky Blue */
+    border-radius: 10px;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+#submitButton {
+    cursor: pointer;
+    background-color: rgb(55, 219, 55);
+    border-radius: 10px;
+    border-color: aqua;
+}
+
+#submitButton {
+    padding: 10px 20px; /* Adjust padding to increase button size */
+    font-size: 16px; /* Adjust font size as needed */
+}
+
+#faq-section h2{
+    text-align: center;
+    font-family: 'Lora', serif;
+    font-style: italic;
+    font-size: 39px;
+    text-decoration: underline;
+    margin-bottom: 20px;
+
+
+}
+
+.faq-item{
+    text-align: center;
+    text-wrap: wrap;
+}
+
+
+footer {
+    margin-top: 8px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-logo p {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.footer-contacts a img {
+    max-width: 30px;
+    margin-right: 10px;
+}
+
+.footer-copyright {
+    margin-top: 20px;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    #introduction-section,
+    #admissions-process {
+        padding: 20px;
+    }
+
+    #admissions-process form {
+        max-width: 80%;
+    }
+}

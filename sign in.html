@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sign in.css">
+    <style>
+        body {
+    background: #f0f0f0;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    position: fixed; /* Make the header fixed */
+    top: 0; /* Position it at the top */
+    z-index: 1000; /* Set a higher z-index to make sure it's on top of other elements */
+}
+
+h2 {
+        margin-bottom: 20px;
+}
+
+button {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 30px;
+}
+
+button:hover {
+    background-color: #0000ff;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+}
+
+    </style>
+    <title>Buttons</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="admissions.html">Admissions</a></li>
+                <li><a href="sign in.html">Sign In</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h2>Choose User</h2>
+
+    <a href="pastor.html">
+        <button>Pastor</button>
+    </a>
+
+    <a href="parent.html">
+        <button>Parent</button>
+    </a>
+
+    <a href="teacher.html">
+        <button>Teacher</button>
+    </a>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <p>CITAM</p>
+            </div>
+
+            <div class="footer-contacts">
+                <!-- Footer contact details (as per your previous code) -->
+                <p>
+                    Contacts: Phone: 0114602603/4 Tel: 020-23 482 45 <br>
+                    <br>
+                    <a href="mailto:edu37872@gmail.com">
+                        <img src="icons8-gmail.svg" alt="Email">
+                    </a>
+
+                    <a href="https://wa.me/+254114602603">
+                        <img src="whatsapp.svg" alt="WhatsApp">
+                    </a>
+
+                    <a href="https://twitter.com/CITAMonline">
+                        <img src="x-twitter.svg" alt="Twitter">
+                    </a>
+                </p>
+            </div>
+
+            <div class="footer-copyright">
+                <p>© 2023 CITAM,<br>
+                    Christ is The Answer Ministries,<br>
+                    All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

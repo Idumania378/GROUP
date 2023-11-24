@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="sign in 2.css">
     <title>Teacher Page</title>
 </head>
 <body>
@@ -11,11 +11,10 @@
     <h1>Welcome, Teacher</h1>
     <div id="teacher-buttons">
         <button class="user-button" onclick="showLogin()">Login</button>
-        <button class="user-button" onclick="showSignUp()">Sign Up</button>
-        <button onclick="goToMainPage()" style="background-color: #3498db;">Main Page</button>
-        <script>
+        <button1 onclick="goToMainPage()"></button>
+            <script>
                 function goToMainPage() {
-                    window.location.href = "index.html";
+                    window.location.href = "sign in.html";
                 }
             </script>
     </div>
@@ -29,45 +28,19 @@
             <input type="password" id="login-password" name="login-password" placeholder="Enter your password" required><br>
 
             <button type="submit" class="user-button">Login</button>
-            <button onclick="goToMainPage()">Return to Main Page</button>
+            <button onclick="goToMainPage()" class="return-button">Return to Main Page</button>
+
+
+
             <script>
                 function goToMainPage() {
-                    window.location.href = "index.html";
+                    window.location.href = "sign in.html";
                 }
             </script>
         </form>
     </div>
 
-    <div id="signup-form" style="display: none;">
-        <form>
-            <label for="teacher-id">ID:</label>
-            <input type="text" id="teacher-id" name="teacher-id" placeholder="Enter your ID" required><br>
 
-            <label for="teacher-name">Name:</label>
-            <input type="text" id="teacher-name" name="teacher-name" placeholder="Enter your name" required><br>
-
-            <label for="teaching-level">Level of Teaching:</label>
-            <input type="text" id="teaching-level" name="teaching-level" placeholder="Enter your teaching level" required><br>
-
-            <label for="phone-number">Phone Number:</label>
-            <input type="text" id="phone-number" name="phone-number" placeholder="Enter your phone number" required><br>
-
-            
-            <label for="signup-password">Create Password:</label>
-            <input type="password" id="signup-password" name="signup-password" placeholder="Create a password" required><br>
-
-            <label for="confirm-password">Retype Password:</label>
-            <input type="password" id="confirm-password" name="confirm-password" placeholder="Retype your password" required><br>
-
-            <button type="submit" class="user-button">Sign Up</button>
-            <button onclick="goToMainPage()">Return to Main Page</button>
-            <script>
-                function goToMainPage() {
-                    window.location.href = "index.html";
-                }
-            </script>
-        </form>
-    </div>
 
     <script>
         function showLogin() {

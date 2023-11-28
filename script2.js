@@ -1,7 +1,6 @@
 function validateForm(event) {
-    event.preventDefault(); // Prevent form submission
+    event.preventDefault(); 
 
-    // Validate other input fields
 
     const password = document.getElementById('password').value;
     const confirmPassword = document.getElementById('confirmPassword').value;
@@ -21,10 +20,8 @@ function validateForm(event) {
         return;
     }
 
-    // If all validations pass, set a green border color and proceed with form submission or other actions
     submitButton.style.border = '2px solid green';
     alert('Form submitted successfully!');
 }
 
-// Attach the validateForm function to the form's submit event
 document.getElementById('admissions-form').addEventListener('submit', validateForm);

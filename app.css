@@ -77,7 +77,7 @@ nav a:hover {
 }
 
 .feature-text {
-    max-width: 100%; /* Change to 100% to cover the whole image */
+    max-width: 100%; 
     padding: 20px;
 }
 
@@ -155,16 +155,16 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    text-align: center; /* Center-align text within the section */
-    margin-bottom: 30px; /* Add margin at the bottom */
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 .services-section h3 {
-    margin-top: 0; /* Remove top margin */
-    visibility: visible; /* Make the text visible */
+    margin-top: 0;
+    visibility: visible;
     margin-bottom: 30px;
-    display: block; /* Make the text display as block */
-    width: 100%; /* Set width to 100% for full-width text */
+    display: block; 
+    width: 100%; 
 }
 
 .service {
@@ -203,8 +203,8 @@ footer {
 
     .service-text {
         margin-top: 20px;
-        position: static; /* Remove absolute positioning on smaller screens */
-        max-width: 100%; /* Full width on smaller screens */
-        box-shadow: none; /* Remove box shadow on smaller screens */
+        position: static; 
+        max-width: 100%;
+        box-shadow: none; 
     }
 }

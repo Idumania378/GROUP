@@ -62,7 +62,7 @@ p {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 48%; /* Adjust the width as needed */
+    width: 48%; 
 }
 
 
@@ -121,13 +121,13 @@ footer {
 
 .footer-content {
     display: flex;
-    flex-direction: column; /* Updated to a column layout */
+    flex-direction: column; 
     align-items: center;
     text-align: center;
 }
 
 .footer-contacts {
-    margin-top: 20px; /* Adjust as needed */
+    margin-top: 20px; 
 }
 
 .footer-contacts p {
@@ -141,12 +141,12 @@ footer {
 }
 
 .footer-contacts img {
-    width: 20px; /* Adjust the size as needed */
-    height: 20px; /* Maintain aspect ratio if necessary */
+    width: 20px;
+    height: 20px; 
 }
 
 .footer-copyright {
-    margin-top: 20px; /* Adjust as needed */
+    margin-top: 20px;
 }
 
 .footer-copyright p {

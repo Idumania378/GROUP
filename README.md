@@ -1,8 +1,8 @@
-# Sample School Website
+# Sample School Website Frontend
 
 ## Overview
 
-Welcome to the Sample School Website repository! This project serves as a testing ground for various website creation strategies, including design, functionality, and optimization techniques.
+Welcome to the this Sample School Website repository! This project serves as a testing ground for various website creation strategies, including design, functionality, and optimization techniques.
 
 ## Features
 
